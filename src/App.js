@@ -1,4 +1,4 @@
-
+import 'bulma/css/bulma.css';
 import './App.css';
 import Homepage from './pages/Homepage';
 

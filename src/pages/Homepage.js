@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import ContactForm from '../components/ContactForm';
+import ComputerSupportCard from '../components/ComputerSupportCard';
+import MobileAssistanceCard from '../components/MobileAssistanceCard';
+import TabletAssistanceCard from '../components/TabletAssistanceCard';
 
 function Homepage() {
   return (
@@ -31,88 +34,9 @@ function Homepage() {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column">
-              <div className="card">
-                <div className="card-content">
-                  <div className="media">
-                    <div className="media-left">
-                      <figure className="image is-64x64">
-                        <img src="phone-icon.png" alt="Puhelin-ikoni" />
-                      </figure>
-                    </div>
-                    <div className="media-content">
-                      <p className="title is-4">Puhelinapu</p>
-                      <p className="subtitle is-6">Apua älypuhelinten kanssa</p>
-                    </div>
-                  </div>
-                  <div className="content">
-                    Asiantuntijamme auttavat sinua älypuhelinten asentamisessa,
-                    käytössä, sovellusten asentamisessa, ongelmien vianetsinnässä ja paljon muussa.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="column">
-              <div className="card">
-                <div className="card-content">
-                  <div className="media">
-                    <div className="media-left">
-                      <figure className="image is-64x64">
-                        <img src="computer-icon.png" alt="Tietokone-ikoni" />
-                      </figure>
-                    </div>
-                    <div className="media-content">
-                      <p className="title is-4">Tietokoneen tuki</p>
-                      <p className="subtitle is-6">Apua tietokoneiden kanssa</p>
-                    </div>
-                  </div>
-                  <div className="content">
-                    Tarvitsetko apua tietokoneesi kanssa? Taitavat teknikkomme ovat
-                    täällä tarjoamassa sinulle asiantuntevaa tukea, oli kyseessä sitten
-                    laitteistoon tai ohjelmistoon liittyviä ongelmia, laitteiden asentamista
-                    tai suorituskyvyn optimointia.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="column">
-              <div className="card">
-                <div className="card-content">
-                  <div className="media">
-                    <div className="media-left">
-                      <figure className="image is-64x64">
-                        <img src="tablet-icon.png" alt="Tabletti-ikoni" />
-                      </figure>
-                    </div>
-                    <div className="media-content">
-                      <p className="title is-4">Tablettiapu</p>
-                      <p className="subtitle is-6">Apua tablettien kanssa</p>
-                    </div>
-                  </div>
-                  <div className="content">
-                    Tabletit voivat olla erinomainen työkalu ikääntyville ihmisille. Tiimimme
-                    voi opastaa sinua käyttämään tablettia tehokkaasti, oli kyseessä sitten
-                    sähköposti, selailu, videopuhelut tai viihdesovellukset.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="columns">
-            <div className="column">
-              <h2 className="title is-2">Miksi valita Tech Assist?</h2>
-              <ul>
-                <li>Kokenut ja ystävällinen henkilökunta</li>
-                <li>Räätälöidyt ratkaisut erityistarpeisiin</li>
-                <li>Nopea ja luotettava asiakaspalvelu</li>
-                <li>Kilpailukykyiset hinnat</li>
-              </ul>
-            </div>
+            <MobileAssistanceCard />
+            <ComputerSupportCard />
+            <TabletAssistanceCard />
           </div>
         </div>
       </section>

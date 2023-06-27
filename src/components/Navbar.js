@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Pricing from '../pages/Pricing';
+import Homepage from '../pages/Homepage';
 
 // Import your pages/components here
-import Homepage from './pages/Homepage';
-import Pricing from './pages/Pricing';
+
 
 function MyComponent() {
   return (
@@ -59,8 +60,8 @@ function MyComponent() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="../pages/" element={<Homepage />} />
+        <Route path="../pages/Pricing" element={<Pricing />} />
       </Routes>
     </Router>
   );

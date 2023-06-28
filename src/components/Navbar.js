@@ -60,8 +60,9 @@ function MyComponent() {
       </nav>
 
       <Routes>
-        <Route path="../pages/" element={<Homepage />} />
-        <Route path="../pages/Pricing" element={<Pricing />} />
+      <Route path="/homepage" element={<Homepage />} />
+<Route path="/Pricing" element={<Pricing />} />
+
       </Routes>
     </Router>
   );

@@ -1,14 +1,16 @@
 import React from 'react';
-import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 import Pricing from '../pages/Pricing';
 import Homepage from '../pages/Homepage';
+
 
 // Import your pages/components here
 
 
 function MyComponent() {
   return (
-    <Router>
+    <div>
       <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
@@ -60,11 +62,10 @@ function MyComponent() {
       </nav>
 
       <Routes>
-      <Route path="/homepage" element={<Homepage />} />
-<Route path="/Pricing" element={<Pricing />} />
-
+        <Route path="/" element={<Homepage />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 

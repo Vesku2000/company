@@ -19,7 +19,7 @@ function Pricing() {
       <section className="section">
         <div className="container">
           <h2 className="title">Laskutus mallit</h2>
-          <h4>Tässä erilaisia esimerkkejä hinnastostamme ja palveluista, joita siihen sisältyy</h4>
+          <h4 className='pb-5'>Tässä erilaisia esimerkkejä hinnastostamme ja palveluista, joita siihen sisältyy</h4>
 
           <div className="columns">
             <div className="column">

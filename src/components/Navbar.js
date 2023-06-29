@@ -31,23 +31,23 @@ function MyComponent() {
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More
+          Enemmän
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
+        <Link to="/" className='navbar-item'>
+            Esimerkkejä
+        </Link>
+        <Link to="/" className='navbar-item'>
+            Yrityksestä
+        </Link>
+        <Link to="/" className='navbar-item'>
+            Yhteystiedot
+        </Link>
           <hr class="navbar-divider" />
-          <a class="navbar-item">
-            Report an issue
-          </a>
+            <Link to="" className='navbar-item'>
+                Kokemuksia
+            </Link>
         </div>
       </div>
     </div>

@@ -1,72 +1,52 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
-import Pricing from '../pages/Pricing';
-import Homepage from '../pages/Homepage';
+import React, { useState } from 'react';
 
 
 // Import your pages/components here
 
 
 function MyComponent() {
-  return (
-    <div>
-      <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma Logo" />
-          </a>
 
-          <a
-            role="button"
-            className="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
-            <Link to="/" className="navbar-item">Home</Link>
-
-            <Link to="/pricing" className="navbar-item">Pricing</Link>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">
-                More
-              </a>
-
-              <div className="navbar-dropdown">
-                <a className="navbar-item">
-                  About
+    const [isActive, setisActive] = React.useState(false)
+    
+      return (
+        <nav className='navbar' role='navigation' aria-label='main navigation'>
+          <div className='navbar-brand'>
+            <a href='/' className='navbar-item'>
+              <img
+                src='https://bulma.io/images/bulma-logo.png'
+                alt='Logo'
+                width='112'
+                height='28'
+              />
+            </a>
+    
+            <a
+              role='button'
+              className={'navbar-burger burger'}
+              aria-label='menu'
+              aria-expanded='false'
+              data-target='navbarBasicExample'
+            >
+              <span aria-hidden='true'></span>
+              <span aria-hidden='true'></span>
+              <span aria-hidden='true'></span>
+            </a>
+          </div>
+          <div id='navbarBasicExample' className='navbar-menu'>
+            <div className='navbar-end'>
+              <div className='navbar-item'>
+                <a href='/' className='navbar-item'>
+                  Home
                 </a>
-                <a className="navbar-item">
-                  Jobs
-                </a>
-                <a className="navbar-item">
-                  Contact
-                </a>
-                <hr className="navbar-divider" />
-                <a className="navbar-item">
-                  Report an issue
+                <a href='/' className='navbar-item'>
+                  Documentation
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      )
+    }
 
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/pricing" element={<Pricing />} />
-      </Routes>
-    </div>
-  );
-}
 
 export default MyComponent;

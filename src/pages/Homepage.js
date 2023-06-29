@@ -8,7 +8,7 @@ import TabletAssistanceCard from '../components/TabletAssistanceCard';
 function Homepage() {
   return (
     <div>
-      <section className="hero is-light is-fullheight">
+      <section className="hero has-background-primary-light  is-fullheight">
         <div className="hero-body">
           <div className="container">
             <h1 className="title is-1">
@@ -23,7 +23,7 @@ function Homepage() {
               ammattilaisjoukkomme on omistautunut auttamaan ikääntyviä ihmisiä
               digitaalisen maailman hallinnassa.
             </p>
-            <a href="#contact" className="button is-light is-large mt-5">
+            <a href="#contact" className="button is-primary is-large mt-5">
               Ota yhteyttä
             </a>
           </div>

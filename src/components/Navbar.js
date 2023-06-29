@@ -2,61 +2,55 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function MyComponent() {
-
-
-    
-    return (
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <Link to="/" class="navbar-item">
-        Home
-      </Link>
-
-      <Link to="/Pricing" class="navbar-item">
-        Pricing
-      </Link>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Enemmän
+  return (
+    <nav className="navbar has-background-primary" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a className="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma Logo" />
         </a>
 
-        <div class="navbar-dropdown">
-        <Link to="/" className='navbar-item'>
-            Esimerkkejä
-        </Link>
-        <Link to="/" className='navbar-item'>
-            Yrityksestä
-        </Link>
-        <Link to="/" className='navbar-item'>
-            Yhteystiedot
-        </Link>
-          <hr class="navbar-divider" />
-            <Link to="" className='navbar-item'>
+        <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-start">
+          <Link to="/" className="navbar-item">
+            Etusivu
+          </Link>
+
+          <Link to="/Pricing" className="navbar-item">
+            Hinnat
+          </Link>
+
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">
+              Enemmän
+            </a>
+
+            <div className="navbar-dropdown">
+              <Link to="/" className="navbar-item">
+                Esimerkkejä
+              </Link>
+              <Link to="/" className="navbar-item">
+                Yrityksestä
+              </Link>
+              <Link to="/" className="navbar-item">
+                Yhteystiedot
+              </Link>
+              <hr className="navbar-divider" />
+              <Link to="" className="navbar-item">
                 Kokemuksia
-            </Link>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    
-  </div>
-</nav>
-      );
-    };
-
+    </nav>
+  );
+}
 
 export default MyComponent;

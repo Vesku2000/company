@@ -41,16 +41,16 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" className="section is-primary">
+    <section id="contact" className="section has-background-primary-light ">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-half">
-            <h2 className="title is-2 has-text-centered has-text-white">
+            <h2 className="title is-2 has-text-centered has-text-black">
               Ota yhteyttä
             </h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="has-shadow">
               <div className="field">
-                <label className="label">Nimi</label>
+                <label className="label has-text-black">Nimi</label>
                 <div className="control">
                   <input
                     className="input"
@@ -62,7 +62,7 @@ function ContactForm() {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Sähköposti</label>
+                <label className="label has-text-black">Sähköposti</label>
                 <div className="control">
                   <input
                     className="input"
@@ -74,7 +74,7 @@ function ContactForm() {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Viesti</label>
+                <label className="label has-text-black">Viesti</label>
                 <div className="control">
                   <textarea
                     className="textarea"
@@ -86,7 +86,7 @@ function ContactForm() {
               </div>
               <div className="field">
                 <div className="control">
-                  <button type="submit" className="button is-light">
+                  <button type="submit" className="button is-primary-light">
                     Lähetä
                   </button>
                 </div>

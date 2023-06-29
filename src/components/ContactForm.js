@@ -1,38 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
+import emailjs from "emailjs-com";
+import Swal from 'sweetalert2';
 
-function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+const SERVICE_ID = "service_9glw5nt";
+const TEMPLATE_ID = "template_y1eicm6";
+const USER_ID = "QI17P74nLvCH9VLcp";
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const formData = {
-      name,
-      email,
-      message,
+const ContactForm = () => {
+    const handleOnSubmit = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+        .then(
+          (result) => {
+            console.log(result.text);
+            Swal.fire({
+              icon: "success",
+              title: "Message Sent Successfully",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            Swal.fire({
+              icon: "error",
+              title: "Ooops, something went wrong",
+              text: error.text,
+            });
+          }
+        );
+      e.target.reset();
     };
 
-    fetch('http://localhost:3000/submit-form', {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Form submitted successfully:', data);
-        // Clear the form fields after successful submission
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch((error) => {
-        console.error('Error submitting form:', error);
-      });
-  };
 
   return (
     <section id="contact" className="section has-background-primary-light pb-4">
@@ -42,16 +40,17 @@ function ContactForm() {
             <h2 className="title is-2 has-text-centered has-text-black">
               Ota yhteyttä
             </h2>
-            <form onSubmit={handleSubmit} className="has-shadow">
+            <form onSubmit={handleOnSubmit} className="has-shadow">
               <div className="field">
                 <label className="label has-text-black">Nimi</label>
                 <div className="control">
                   <input
+                  fluid
                     className="input"
                     type="text"
                     placeholder="Nimesi"
-                    value={name}
-                    onChange={(event) => setName(event.target.value)}
+                    name="from_name"
+                    required
                   />
                 </div>
               </div>
@@ -60,10 +59,10 @@ function ContactForm() {
                 <div className="control">
                   <input
                     className="input"
+                    name="from_email"
+                    required
                     type="email"
                     placeholder="Sähköpostiosoitteesi"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
                   />
                 </div>
               </div>
@@ -73,8 +72,8 @@ function ContactForm() {
                   <textarea
                     className="textarea"
                     placeholder="Viestisi"
-                    value={message}
-                    onChange={(event) => setMessage(event.target.value)}
+                    name="message"
+                    required
                   ></textarea>
                 </div>
               </div>
@@ -91,6 +90,6 @@ function ContactForm() {
       </div>
     </section>
   );
-}
+  };
 
 export default ContactForm;

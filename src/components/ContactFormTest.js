@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Input, TextArea, Button } from "semantic-ui-react";
+import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import Swal from "sweetalert2";
 
 const SERVICE_ID = "service_9glw5nt";
@@ -33,64 +33,45 @@ const FormTest = () => {
   };
 
   return (
-    <section id="contact" className="section has-background-primary-light pb-4">
-      <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-half">
-            <h2 className="title is-2 has-text-centered has-text-black">
-              Ota yhteyttä
-            </h2>
-            <form onSubmit={handleOnSubmit} className="has-shadow">
-              <div className="field">
-                <label className="label has-text-black">Nimi</label>
-                <div className="control">
-                  <Input
-                    fluid
-                    type="text"
-                    name="user_name"
-                    placeholder="Nimesi"
-                    required
-                    icon="user circle"
-                    iconPosition="left"
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <label className="label has-text-black">Sähköposti</label>
-                <div className="control">
-                  <Input
-                    fluid
-                    type="email"
-                    name="user_email"
-                    placeholder="Sähköpostiosoitteesi"
-                    required
-                    icon="mail"
-                    iconPosition="left"
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <label className="label has-text-black">Viesti</label>
-                <div className="control">
-                  <TextArea
-                    placeholder="Viestisi"
-                    name="user_message"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <div className="control">
-                  <Button type="submit" color="green" fluid>
-                    Lähetä
-                  </Button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="FormTest">
+      <Form onSubmit={handleOnSubmit}>
+        <Form.Field>
+          <label>Email</label>
+          <Input
+            fluid
+            type="email"
+            name="user_email"
+            placeholder="Email…"
+            required
+            icon="mail"
+            iconPosition="left"
+          />
+        </Form.Field>
+        <Form.Field>
+          <label>Name</label>
+          <Input
+            fluid
+            type="text"
+            name="user_name"
+            placeholder="Name…"
+            required
+            icon="user circle"
+            iconPosition="left"
+          />
+        </Form.Field>
+        <Form.Field>
+          <label>Message</label>
+          <TextArea
+            placeholder="Message…"
+            name="user_message"
+            required
+          />
+        </Form.Field>
+        <Button type="submit" color="green">
+          Submit
+        </Button>
+      </Form>
+    </div>
   );
 };
 

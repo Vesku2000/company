@@ -8,18 +8,17 @@ function TabletAssistanceCard() {
           <div className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-                <img src="tablet-icon.png" alt="Tablet Icon" />
+              <img src="C:\Users\35844\Desktop\reactcompany\mycomp\src\assets\img\phone.jpg" alt="Tablettikuvake" />
+
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">Tablet Assistance</p>
-              <p className="subtitle is-6">Help with tablets</p>
+              <p className="title is-4">Tablettiapu</p>
+              <p className="subtitle is-6">Apua tablettien kanssa</p>
             </div>
           </div>
           <div className="content">
-            Tablets can be a great tool for older adults. Our team can
-            guide you through using tablets effectively, from email and
-            browsing to video calls and entertainment apps.
+            Tabletit voivat olla loistava työkalu vanhemmille aikuisille. Tiimimme voi opastaa sinua käyttämään tabletteja tehokkaasti, oli kyse sitten sähköpostista ja selailusta, videopuheluista tai viihde-sovelluksista.
           </div>
         </div>
       </div>

@@ -8,19 +8,16 @@ function ComputerSupportCard() {
           <div className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-                <img src="computer-icon.png" alt="Computer Icon" />
+                <img src="../assets/img/computer.jpg" alt="Tietokoneikon" />
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">Computer Support</p>
-              <p className="subtitle is-6">Assistance with computers</p>
+              <p className="title is-4">Tietokoneen tuki</p>
+              <p className="subtitle is-6">Apua tietokoneisiin liittyen</p>
             </div>
           </div>
           <div className="content">
-            Need help with your computer? Our skilled technicians are here
-            to provide you with expert support, whether it's hardware or
-            software-related issues, setting up devices, or optimizing
-            performance.
+            Tarvitsetko apua tietokoneesi kanssa? Kokeneet teknikkomme ovat täällä tarjoamassa asiantuntijatukea, oli kyse sitten laitteistoon tai ohjelmistoon liittyvistä ongelmista, laitteiden asennuksesta tai suorituskyvyn optimoinnista.
           </div>
         </div>
       </div>

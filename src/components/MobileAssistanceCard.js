@@ -8,17 +8,16 @@ function MobileAssistanceCard() {
           <div className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-                <img src="phone-icon.png" alt="Phone Icon" />
+                <img src="phone-icon.png" alt="Puhelinikon" />
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">Mobile Assistance</p>
-              <p className="subtitle is-6">Get help with your smartphones</p>
+              <p className="title is-4">Mobiiliapu</p>
+              <p className="subtitle is-6">Saat apua älypuhelimesi kanssa</p>
             </div>
           </div>
           <div className="content">
-            Our experts can assist you with setting up and using your
-            smartphones, installing apps, troubleshooting issues, and more.
+            Asiantuntijamme auttavat sinua älypuhelimen asennuksessa ja käytössä, sovellusten asentamisessa, ongelmien vianmäärityksessä ja paljon muussa.
           </div>
         </div>
       </div>

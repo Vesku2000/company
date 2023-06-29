@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 
 function ComputerSupportCard() {
   return (
@@ -8,7 +10,7 @@ function ComputerSupportCard() {
           <div className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-                <img src="../assets/img/computer.jpg" alt="Tietokoneikon" />
+                <FontAwesomeIcon icon={faDesktop} size="2x" />
               </figure>
             </div>
             <div className="media-content">

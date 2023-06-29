@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 function MobileAssistanceCard() {
   return (
@@ -8,7 +10,7 @@ function MobileAssistanceCard() {
           <div className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-                <img src="phone-icon.png" alt="Puhelinikon" />
+                <FontAwesomeIcon icon={faMobileAlt} size="2x" />
               </figure>
             </div>
             <div className="media-content">

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTabletAlt } from '@fortawesome/free-solid-svg-icons';
 
 function TabletAssistanceCard() {
   return (
@@ -8,8 +10,7 @@ function TabletAssistanceCard() {
           <div className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-              <img src="C:\Users\35844\Desktop\reactcompany\mycomp\src\assets\img\phone.jpg" alt="Tablettikuvake" />
-
+                <FontAwesomeIcon icon={faTabletAlt} size="2x" />
               </figure>
             </div>
             <div className="media-content">

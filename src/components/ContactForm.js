@@ -41,7 +41,7 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" className="section has-background-primary-light ">
+    <section id="contact" className="section has-background-primary-light pb-4">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-half">

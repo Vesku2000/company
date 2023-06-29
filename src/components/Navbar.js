@@ -38,7 +38,7 @@ function MyComponent() {
               <Link to="/" className="navbar-item">
                 Yrityksestä
               </Link>
-              <Link to="/" className="navbar-item">
+              <Link to="/Contact" className="navbar-item">
                 Yhteystiedot
               </Link>
               <hr className="navbar-divider" />

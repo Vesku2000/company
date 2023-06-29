@@ -4,44 +4,32 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer has-background-primary has-text-white">
       <div className="container">
         <div className="columns">
           <div className="column">
-            <h3 className="footer-heading">Yritys</h3>
-            <ul className="footer-list">
-              <li className="footer-item">Tietoja meistä</li>
-              <li className="footer-item">Yhteystiedot</li>
-              <li className="footer-item">Sijainti</li>
-            </ul>
+            <h3 className="title is-4">Company Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.</p>
           </div>
           <div className="column">
-            <h3 className="footer-heading">Palvelut</h3>
-            <ul className="footer-list">
-              <li className="footer-item">Tuotteet</li>
-              <li className="footer-item">Asiakastuki</li>
-              <li className="footer-item">Usein kysytyt kysymykset</li>
-            </ul>
+            <h3 className="title is-4">Contact Us</h3>
+            <p>123 Street, City</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 123 456789</p>
           </div>
           <div className="column">
-            <h3 className="footer-heading">Seuraa meitä</h3>
-            <ul className="footer-icons">
-              <li className="footer-icon">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li className="footer-icon">
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li className="footer-icon">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-            </ul>
+            <h3 className="title is-4">Follow Us</h3>
+            <div className="social-icons">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

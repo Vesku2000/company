@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
+import { Form } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -32,6 +33,7 @@ const Contact = () => {
       </section>
 
       <ContactForm />
+      <Form />
     </div>
   );
 };

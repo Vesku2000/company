@@ -8,16 +8,13 @@ function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Here, you can send the form data to the desired endpoint
-    // using fetch, axios, or any other HTTP library
     const formData = {
       name,
       email,
       message,
     };
 
-    // Example using fetch:
-    fetch('https://api.example.com/submit-form', {
+    fetch('http://localhost:3000/submit-form', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
@@ -26,18 +23,15 @@ function ContactForm() {
     })
       .then((response) => response.json())
       .then((data) => {
-        // Handle the response data
         console.log('Form submitted successfully:', data);
+        // Clear the form fields after successful submission
+        setName('');
+        setEmail('');
+        setMessage('');
       })
       .catch((error) => {
-        // Handle the error
         console.error('Error submitting form:', error);
       });
-
-    // Reset the form fields
-    setName('');
-    setEmail('');
-    setMessage('');
   };
 
   return (

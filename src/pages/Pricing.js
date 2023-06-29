@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
 import './Pricing.css';
+import FormTest from '../components/ContactFormTest';
 
 function Pricing() {
   return (
@@ -81,6 +82,8 @@ function Pricing() {
           </div>
         </div>
       </section>
+
+      <FormTest />
     </div>
   );
 }

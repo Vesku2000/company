@@ -8,7 +8,6 @@ import TabletAssistanceCard from '../components/TabletAssistanceCard';
 function Homepage() {
   return (
     <div>
-      <Navbar />
       <section className="hero is-light is-fullheight">
         <div className="hero-body">
           <div className="container">

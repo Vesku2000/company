@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 function Pricing() {
   return (
     <div>
-      <Navbar />
       <section className="section">
         <div className="container">
           <h1 className="title">Pricing</h1>

@@ -2,20 +2,21 @@ import 'bulma/css/bulma.css';
 import './App.css';
 import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Pricing from './pages/Pricing';
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
+
       <Navbar />
-      <Routes>
-        <Route path='/Homepage' exact component={Homepage} />
-        <Route path='/Pricing' component={Pricing} />
-      </Routes>
-    </Router>
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={ <Homepage />} />
+          <Route path='/Pricing' element={ <Pricing />} />
+        </Routes>
+      </div>
     </div>
   );
 }

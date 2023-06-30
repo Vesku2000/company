@@ -59,7 +59,7 @@ function MyComponent() {
                 Yhteystiedot
               </Link>
               <hr className="navbar-divider" />
-              <Link to="" className="navbar-item" onClick={closeMobileMenu}>
+              <Link to="Commentspage" className="navbar-item" onClick={closeMobileMenu}>
                 Kokemuksia
               </Link>
             </div>

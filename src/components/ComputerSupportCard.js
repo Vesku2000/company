@@ -14,7 +14,7 @@ function ComputerSupportCard() {
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">Tietokoneen tuki</p>
+              <p className="title is-4">Tietokone tuki</p>
               <p className="subtitle is-6">Apua tietokoneisiin liittyen</p>
             </div>
           </div>

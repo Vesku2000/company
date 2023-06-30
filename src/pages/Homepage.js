@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import ContactForm from '../components/ContactForm';
 import ComputerSupportCard from '../components/ComputerSupportCard';
 import MobileAssistanceCard from '../components/MobileAssistanceCard';

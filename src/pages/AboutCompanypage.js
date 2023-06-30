@@ -7,22 +7,13 @@ const AboutCompanypage = () => {
     <div className="hero is-fullheight">
       <div className="hero-body">
         <div className="container">
-          <div className="columns">
-            <div className="column is-two-fifths">
+          <div className="columns is-centered">
+            <div className="column is-four-fifths">
               <div className="card">
                 <div className="card-content">
                   <h1 className="title is-1">Tietoa Yrityksestä</h1>
                   <p className="is-size-5">
-                    Olen 23-vuotias IT-opiskelija, joka perusti tämän yrityksen vuonna 2023. Tämä on ensimmäinen yritykseni, ja tavoitteenani on laajentua tulevaisuudessa.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="column is-two-fifths">
-              <div className="card">
-                <div className="card-content">
-                  <p className="is-size-5">
-                    Yritykseni tarjoaa ammattimaista ja laadukasta palvelua. Olen intohimoinen teknologian käyttäjä ja haluan auttaa muita hyödyntämään sitä heidän arjessaan.
+                    Olen 23-vuotias IT-opiskelija, joka perusti tämän yrityksen vuonna 2023. Tämä on ensimmäinen yritykseni, ja tavoitteenani on laajentua tulevaisuudessa. Yritykseni tarjoaa ammattimaista ja laadukasta palvelua. Olen intohimoinen teknologian käyttäjä ja haluan auttaa muita hyödyntämään sitä heidän arjessaan. Ymmärrän, että teknologia voi olla haastavaa monille, erityisesti iäkkäämmille ihmisille. Siksi haluan tarjota ystävällistä ja kärsivällistä tukea heille, jotta he voivat hyödyntää teknologian tarjoamia mahdollisuuksia. Tavoitteeni on luoda pitkäaikaisia asiakassuhteita ja saavuttaa maine luotettavana ja asiantuntevana yrityksenä. Haluan kehittyä ja oppia jatkuvasti tarjotakseni parasta mahdollista palvelua asiakkaille. Olen innoissani tästä yrityksestä ja siitä, mitä tulevaisuus tuo tullessaan. Toivon voivani kasvattaa yritystäni ja tarjota entistä laajempia palveluja asiakkaille.
                   </p>
                 </div>
               </div>

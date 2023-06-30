@@ -1,6 +1,6 @@
 import 'bulma/css/bulma.css';
 import './App.css';
-import Homepage from './pages/HomePage';
+import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
 import Pricing from './pages/Pricing';
 import { Route, Routes } from 'react-router-dom';

@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function MyComponent() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="navbar has-background-primary" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
@@ -9,40 +19,47 @@ function MyComponent() {
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma Logo" />
         </a>
 
-        <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a
+          role="button"
+          className={`navbar-burger ${isMobileMenuOpen ? 'is-active' : ''}`}
+          aria-label="menu"
+          aria-expanded={isMobileMenuOpen}
+          onClick={handleMobileMenuToggle}
+          data-target="navbarBasicExample"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
+      <div id="navbarBasicExample" className={`navbar-menu ${isMobileMenuOpen ? 'is-active' : ''}`}>
         <div className="navbar-start">
-          <Link to="/" className="navbar-item">
+          <Link to="/" className="navbar-item" onClick={closeMobileMenu}>
             Etusivu
           </Link>
 
-          <Link to="/Pricing" className="navbar-item">
+          <Link to="/Pricing" className="navbar-item" onClick={closeMobileMenu}>
             Hinnat
           </Link>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">
+            <a className="navbar-link" onClick={closeMobileMenu}>
               Enemmän
             </a>
 
             <div className="navbar-dropdown">
-              <Link to="/" className="navbar-item">
-                Esimerkkejä
+              <Link to="/Whopage" className="navbar-item" onClick={closeMobileMenu}>
+                Kenelle palvelu sopii
               </Link>
-              <Link to="/" className="navbar-item">
+              <Link to="/AboutCompanypage" className="navbar-item" onClick={closeMobileMenu}>
                 Yrityksestä
               </Link>
-              <Link to="/Contact" className="navbar-item">
+              <Link to="/Contact" className="navbar-item" onClick={closeMobileMenu}>
                 Yhteystiedot
               </Link>
               <hr className="navbar-divider" />
-              <Link to="" className="navbar-item">
+              <Link to="" className="navbar-item" onClick={closeMobileMenu}>
                 Kokemuksia
               </Link>
             </div>

@@ -6,6 +6,8 @@ import Pricing from './pages/Pricing';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import Whopage from './pages/Whopage';
+import AboutCompanypage from './pages/AboutCompanypage';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path='/' element={ <Homepage />} />
           <Route path='/Pricing' element={ <Pricing />} />
           <Route path='/Contact' element={ <Contact />} />
+          <Route path='/Whopage' element={ <Whopage />} />
+          <Route path='/AboutCompanypage' element={ <AboutCompanypage />} />
 
         </Routes>
       </div>

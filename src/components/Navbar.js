@@ -60,7 +60,7 @@ function MyComponent() {
               </Link>
               <hr className="navbar-divider" />
               <Link to="Commentspage" className="navbar-item" onClick={closeMobileMenu}>
-                Kokemuksia
+                Asiakaspalaute
               </Link>
             </div>
           </div>

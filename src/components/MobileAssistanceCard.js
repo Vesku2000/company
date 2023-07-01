@@ -15,11 +15,11 @@ function MobileAssistanceCard() {
             </div>
             <div className="media-content">
               <p className="title is-4">Mobiiliapu</p>
-              <p className="subtitle is-6">Saat apua älypuhelimesi kanssa</p>
+              <p className="subtitle is-6">Tarvitsetko apua puhelimen kanssa?</p>
             </div>
           </div>
           <div className="content">
-            Asiantuntijamme auttavat sinua älypuhelimen asennuksessa ja käytössä, sovellusten asentamisessa, ongelmien vianmäärityksessä ja paljon muussa.
+            Asiantuntijamme auttavat sinua älypuhelimen käyttöönotossa, sovellusten asentamisessa, ongelmien vianmäärityksessä ja kaikissa muissa apua tarvitsevissa tilanteissa.
           </div>
         </div>
       </div>

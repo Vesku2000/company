@@ -15,7 +15,7 @@ function TabletAssistanceCard() {
             </div>
             <div className="media-content">
               <p className="title is-4">Tablettiapu</p>
-              <p className="subtitle is-6">Apua tablettien kanssa</p>
+              <p className="subtitle is-6">Ongelmia tabletin kanssa?</p>
             </div>
           </div>
           <div className="content">

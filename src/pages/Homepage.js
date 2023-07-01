@@ -11,14 +11,14 @@ function Homepage() {
         <div className="hero-body">
           <div className="container">
             <h1 className="title is-1">
-              Tervetuloa Tech Assistiin
+              Easy Help
             </h1>
             <h2 className="subtitle is-3">
               Teknologiaa ikääntyville ihmisille
             </h2>
             <p className="is-size-5">
-              Tarjoamme asiantuntevaa apua ja tukea kaikkiin IT-tarpeisiisi,
-              älypuhelimista tietokoneisiin ja paljon muuhun. Ystävällinen
+              Tarjoamme asiantuntevaa apua ja tukea kaikkiin IT-tarpeisiisi.
+              Ratkaisemme ongelmia älypuhelimista tietokoneisiin, sekä muihin laitteisiin liittyvissä pulmissa. Ystävällinen
               ammattilaisjoukkomme on omistautunut auttamaan ikääntyviä ihmisiä
               digitaalisen maailman hallinnassa.
             </p>

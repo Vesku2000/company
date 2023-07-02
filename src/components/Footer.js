@@ -8,14 +8,14 @@ function Footer() {
       <div className="container">
         <div className="columns">
           <div className="column">
-            <h3 className="title is-4">Company Name</h3>
+            <h3 className="title is-4">Easy Help</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.</p>
           </div>
           <div className="column">
-            <h3 className="title is-4">Contact Us</h3>
-            <p>123 Street, City</p>
-            <p>Email: info@example.com</p>
-            <p>Phone: +1 123 456789</p>
+            <h3 className="title is-4">Ota yhteyttä</h3>
+            <p>20540 Turku</p>
+            <p>Email: easyhelp@gmail.com</p>
+            <p>Puhelin 0449717620</p>
           </div>
           <div className="column">
             <h3 className="title is-4">Follow Us</h3>

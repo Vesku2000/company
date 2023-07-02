@@ -9,7 +9,7 @@ function Footer() {
         <div className="columns">
           <div className="column">
             <h3 className="title is-4">Easy Help</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.</p>
+            <p>Pelotonta teknistä taikaa</p>
           </div>
           <div className="column">
             <h3 className="title is-4">Ota yhteyttä</h3>

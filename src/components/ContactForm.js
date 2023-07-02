@@ -16,14 +16,14 @@ const ContactForm = () => {
             console.log(result.text);
             Swal.fire({
               icon: "success",
-              title: "Message Sent Successfully",
+              title: "Viesti toimitettu onnistuneesti! Otamme yhteyttä teihin mahdollisimman pian.",
             });
           },
           (error) => {
             console.log(error.text);
             Swal.fire({
               icon: "error",
-              title: "Ooops, something went wrong",
+              title: "Oho, yritä uudestaan",
               text: error.text,
             });
           }
@@ -71,7 +71,7 @@ const ContactForm = () => {
                 <div className="control">
                   <textarea
                     className="textarea"
-                    placeholder="Viestisi"
+                    placeholder="Kirjoita tähän lista asioista, joista tarvitset apua. Voit myös kertoa mistä hinta paketista olet kiinnostunut"
                     name="message"
                     required
                   ></textarea>

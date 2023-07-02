@@ -26,29 +26,25 @@ const AboutCompanypage = () => {
                   <div className="media">
                     <div className="media-left">
                       <figure className="image is-128x128">
-                        <img src="your-image-url.png" alt="Your Name" />
+                        <img src="your-image-url.png" alt="Valtteri Syrjänen" />
                       </figure>
                     </div>
                     <div className="media-content">
                       <div className="columns is-vcentered">
                         <div className="column">
-                          <p className="title is-4">Your Name</p>
-                          <p className="subtitle is-6">Your Country</p>
-                          <p className="subtitle is-6">Your Age</p>
+                          <p className="title is-4">Valtteri Syrjänen</p>
+                          <p className="subtitle is-6">Suomi, Turku</p>
+                          <p className="subtitle is-6">23</p>
                         </div>
                         <div className="column">
                           <ul className="trophy-list">
                             <li>
                               <FontAwesomeIcon icon={faTrophy} className="trophy-icon" />
-                              Finnish Master
+                              Suomenmestari 2016
                             </li>
                             <li>
                               <FontAwesomeIcon icon={faTrophy} className="trophy-icon" />
-                              Fake Trophy 1
-                            </li>
-                            <li>
-                              <FontAwesomeIcon icon={faTrophy} className="trophy-icon" />
-                              Fake Trophy 2
+                              Turun AMK
                             </li>
                           </ul>
                         </div>

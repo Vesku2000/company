@@ -14,7 +14,7 @@ function Footer() {
           <div className="column">
             <h3 className="title is-4">Ota yhteyttä</h3>
             <p>20540 Turku</p>
-            <p>Email: easyhelp@gmail.com</p>
+            <p>Email: valtterisyrjanen@gmail.com</p>
             <p>Puhelin 0449717620</p>
           </div>
           <div className="column">

@@ -12,7 +12,7 @@ const Commentspage = () => {
             <div className="card-content">
               <div className="media">
                 <div className="media-content">
-                  <p className="title is-4">Asiakas 1</p>
+                  <p className="title is-4">Erja 71v</p>
                   <div className="rating">
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
@@ -20,7 +20,7 @@ const Commentspage = () => {
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                   </div>
-                  <p className="comment">"Hyvä palvelu ja nopea toimitus!"</p>
+                  <p className="comment">"Loistava asiakaspalvelu ja nopea vastausaika. Tulen tilaamaan uudestaan."</p>
                 </div>
               </div>
             </div>
@@ -31,7 +31,7 @@ const Commentspage = () => {
             <div className="card-content">
               <div className="media">
                 <div className="media-content">
-                  <p className="title is-4">Asiakas 2</p>
+                  <p className="title is-4">Kari 70v</p>
                   <div className="rating">
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
@@ -39,7 +39,7 @@ const Commentspage = () => {
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                   </div>
-                  <p className="comment">"Loistava tuote laadukkaalla hinta-laatusuhteella."</p>
+                  <p className="comment">"Saatiin sovitut asiat korjattua ja hyvä palvelu muutenkin."</p>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Commentspage = () => {
             <div className="card-content">
               <div className="media">
                 <div className="media-content">
-                  <p className="title is-4">Asiakas 3</p>
+                  <p className="title is-4">Esko 64v</p>
                   <div className="rating">
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
@@ -58,7 +58,7 @@ const Commentspage = () => {
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                     <FontAwesomeIcon icon={faStar} className="star-icon" />
                   </div>
-                  <p className="comment">"Erinomainen asiakaspalvelu ja nopea vastausaika."</p>
+                  <p className="comment">"Asiallinen nuori kaveri. Teki työt sovitusti."</p>
                 </div>
               </div>
             </div>

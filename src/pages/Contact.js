@@ -10,10 +10,10 @@ const Contact = () => {
           <div className="columns is-centered">
             <div className="column is-half">
               <h2 className="title is-2 has-text-centered">Yhteystiedot</h2>
-              <p className="subtitle has-text-centered">Yrityksen nimi</p>
-              <p className="has-text-centered">Osoite</p>
-              <p className="has-text-centered">Puhelinnumero</p>
-              <p className="has-text-centered">Sähköposti</p>
+              <p className="subtitle has-text-centered">Easy Help</p>
+              <p className="has-text-centered">Turku</p>
+              <p className="has-text-centered">0449717620</p>
+              <p className="has-text-centered">valtterisyrjanen@gmail.com</p>
             </div>
           </div>
         </div>
@@ -25,7 +25,8 @@ const Contact = () => {
             <div className="column is-half">
               <h2 className="title is-4 has-text-centered">Ota yhteyttä</h2>
               <p className="has-text-centered">
-                Voit ottaa meihin yhteyttä täyttämällä alla olevan lomakkeen tai käyttämällä yllä näkyviä yhteystietoja. Vastaamme mielellämme kaikkiin kysymyksiisi ja palautteisiisi.
+                Voit ottaa meihin yhteyttä täyttämällä alla olevan lomakkeen tai käyttämällä yllä näkyviä yhteystietoja.
+                Vastaamme mielellämme kaikkiin kysymyksiisi ja palautteisiisi.
               </p>
             </div>
           </div>

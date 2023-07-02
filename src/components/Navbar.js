@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MyLogo from './Logo.png';
 
 function MyComponent() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,9 +16,11 @@ function MyComponent() {
   return (
     <nav className="navbar has-background-primary" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma Logo" />
-        </a>
+      <a className="navbar-item" href="/" style={{ textDecoration: 'none' }}>
+  <h3 style={{ fontWeight: 'bold', color: 'black' }}>Easy Help</h3>
+</a>
+
+
 
         <a
           role="button"

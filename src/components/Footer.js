@@ -9,6 +9,7 @@ function Footer() {
         <div className="columns">
           <div className="column">
             <h3 className="title is-4">Easy Help</h3>
+            <p>2999928-4</p>
             <p>Pelotonta teknistä taikaa</p>
           </div>
           <div className="column">
